@@ -53,13 +53,12 @@ def api_data():
 
     summary = {
         "total": len(items),
-        "success": sum(1 for i in items if i["status"] == "success"),
+        "success": sum(1 for i in items if i["status"] == "success" and not i["is_stale"]),
         "warning": sum(1 for i in items if i["status"] == "warning"),
         "error": sum(1 for i in items if i["status"] == "error"),
         "nomon": sum(1 for i in items if i["status"] == "nomon"),
         "stale": sum(1 for i in items if i["is_stale"]),
     }
-
     return jsonify({
         "items": items,
         "summary": summary,

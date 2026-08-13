@@ -12,9 +12,9 @@
 
 <header class="topbar">
   <div class="topbar-left">
-    <div class="logo-mark">B</div>
+    <div class="logo-mark">T</div>
     <div>
-      <h1>Painel de Backups</h1>
+      <h1>Trudata</h1>
       <p class="subtitle">Controle interno &middot; Cloud Backup PRO</p>
     </div>
   </div>
@@ -37,7 +37,7 @@
     <!-- preenchido via JS -->
   </section>
 
-<section class="chart-card">
+  <section class="chart-card">
     <div class="donut-wrap">
       <svg viewBox="0 0 120 120" class="donut" id="donutChart">
         <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border)" stroke-width="14"></circle>
@@ -46,44 +46,21 @@
       </svg>
       <div class="donut-center">
         <span class="donut-percent" id="donutPercent">0%</span>
-        <span class="donut-label">corretos</span>
+        <span class="donut-label">atualizado</span>
       </div>
     </div>
     <div class="chart-legend">
       <div class="legend-item">
         <span class="legend-dot" style="background:var(--success)"></span>
-        <span>Corretos — <b id="legendCorrectCount">0</b></span>
+        <span>Atualizado — <b id="legendCorrectCount">0</b></span>
       </div>
       <div class="legend-item">
         <span class="legend-dot" style="background:var(--error)"></span>
-        <span>Incorretos — <b id="legendIncorrectCount">0</b></span>
+        <span>Desatualizado — <b id="legendIncorrectCount">0</b></span>
       </div>
     </div>
   </section>
 
-<section class="chart-card">
-    <div class="donut-wrap">
-      <svg viewBox="0 0 120 120" class="donut" id="donutChart">
-        <circle cx="60" cy="60" r="50" fill="none" stroke="var(--border)" stroke-width="14"></circle>
-        <circle cx="60" cy="60" r="50" fill="none" stroke="var(--success)" stroke-width="14"
-                stroke-linecap="round" id="donutArc" transform="rotate(-90 60 60)"></circle>
-      </svg>
-      <div class="donut-center">
-        <span class="donut-percent" id="donutPercent">0%</span>
-        <span class="donut-label">corretos</span>
-      </div>
-    </div>
-    <div class="chart-legend">
-      <div class="legend-item">
-        <span class="legend-dot" style="background:var(--success)"></span>
-        <span>Corretos — <b id="legendCorrectCount">0</b></span>
-      </div>
-      <div class="legend-item">
-        <span class="legend-dot" style="background:var(--error)"></span>
-        <span>Incorretos — <b id="legendIncorrectCount">0</b></span>
-      </div>
-    </div>
-  </section>
   <section class="panel">
     <div class="panel-head">
       <div class="filter-tabs" id="filterTabs">
