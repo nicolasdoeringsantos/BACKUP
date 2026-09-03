@@ -1,0 +1,18 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments and secrets
+.env
+.env.*
+!.env.example
+
+# Local SQLite Database and runtime data
+data/*.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
